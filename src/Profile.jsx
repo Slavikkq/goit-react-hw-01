@@ -1,5 +1,4 @@
 import userData from "./userData.json";
-
 export default function Profile() {
   return (
     <div>
