@@ -1,7 +1,7 @@
 import Profile from "./Profile";
 import FriendList from "./FriendList";
 import friends from "./friends.json";
-import TransactionHistory from "./Transaction";
+import TransactionHistory from "./components/Transaction";
 import transactions from "./transactions.json";
 
 export default function App() {
