@@ -1,26 +1,25 @@
-import userData from "../userData.json";
-export default function Profile() {
+export default function Profile({ name, tag, location, image, stats }) {
   return (
     <div>
       <div>
-        <img src={userData.avatar} alt="User avatar" />
-        <p>{userData.username}</p>
-        <p>@{userData.tag}</p>
-        <p>{userData.location}</p>
+        <img src={image} alt="User avatar" />
+        <p>{name}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </div>
 
       <ul>
         <li>
           <span>Followers</span>
-          <span>{userData.stats.followers}</span>
+          <span>{stats.followers}</span>
         </li>
         <li>
           <span>Views</span>
-          <span>{userData.stats.views}</span>
+          <span>{stats.views}</span>
         </li>
         <li>
           <span>Likes</span>
-          <span>{userData.stats.likes}</span>
+          <span>{stats.likes}</span>
         </li>
       </ul>
     </div>
